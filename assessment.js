@@ -12,7 +12,7 @@ var lovesCode = true;
 
 // #4 Using the previously created variables, create a new variable called 'me' that uses the myName and faveNum varible to create a sentence like this 'My name is Bryan and my favorite number is 3'
 
-var me = "My name is " + myName + "and my favorite number is " + faveNum + ".";
+var me = "My name is " + myName + " and my favorite number is " + faveNum;
 
 // #5 Using the previously created faveNum variable, create a new variable called 'trueFaveNum'. *trueFaveNum* should equal true when comparing faveNum to your favorite number.v // HINT: Use a comparison operator
 
@@ -50,17 +50,19 @@ if (age <= 16) {
 
 var colorResponse;
 
-var responseCreator = function(param){
-  if (param === "green") {
+var responseCreator = function(color){
+  if (color === "green") {
     colorResponse = "Green is okay";
+    return colorResponse;
   }
-  if (param === "red") {
+  if (color === "red") {
     colorResponse = "I heart red";
+    return colorResponse;
   }
   else {
     colorResponse = "What is your favorite color?";
+    return colorResponse;
   }
-  return colorResponse;
 }
 
 // #9 Create a function called 'sum' that takes in one parameter and returns the sum of that parameter added it itself.
@@ -73,6 +75,6 @@ var sum = function(param) {
 // #10 Create a function called 'greeter' that takes in two parameters, name and number. Have 'greeter' return a string that says something like this 'Hi! I am Bryan and I am 28 years old" but with the appropriate values..
 
 var greeter = function(name, number) {
-  var greeting = "Hi, my name is " + name + "and I'm " + number + "years old!";
+  var greeting = "Hi! I am " + name + " and I am " + number + " years old";
   return greeting;
 }
